@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="treeApp">
+<head>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/tree.css">
+
+    <script type="text/javascript" src="libs/jquery.js"></script>
+    <script type="text/javascript" src="libs/bootstrap.js"></script>
+    <script type="text/javascript" src="libs/angular.js"></script>
+    <!-- Require js @TODO-->
+    <script type="text/javascript" src="js/tree/treeApp.js"></script>
+    <script type="text/javascript" src="js/tree/service/treeAppService.js"></script>
+    <script type="text/javascript" src="js/tree/service/uuidService.js"></script>
+    <script type="text/javascript" src="js/tree/controller/treeController.js"></script>
+    <script type="text/javascript" src="js/tree/iter/controller/iterativeController.js"></script>
+    <script type="text/javascript" src="js/tree/recur/controller/recursiveController.js"></script>
+    <script type="text/javascript" src="js/tree/recur/directives/tree.js"></script>
+    <script type="text/javascript" src="js/tree/iter/directives/children.js"></script>
+    <script type="text/javascript" src="js/tree/iter/directives/child.js"></script>
+
+
+</head>
+<body ng-controller="treeController">
+<div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <div ng-include src="'js/tree/recur/view/tree.html'"></div>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <div ng-include src="'js/tree/iter/view/tree.html'"></div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

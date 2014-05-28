@@ -1,0 +1,15 @@
+.panel{
+    border:none;
+    margin-bottom: 0;
+}
+.panel-body{
+    padding-right: 0px;
+}
+.panel-heading h4 span{
+   padding: 5px;
+}
+.panel-default>div>.panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}

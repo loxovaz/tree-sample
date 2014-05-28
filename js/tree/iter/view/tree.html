@@ -1,0 +1,12 @@
+<div ng-controller="iterativeController">
+    <div class="center-block text-center">
+        Iterative tree
+    </div>
+    <children children='data.children'>
+
+    </children>
+    <div class="center-block text-center">
+        <button ng-click="saveState(data)">Save</button>
+        <button ng-click="restoreState()">Restore</button>
+    </div>
+</div>

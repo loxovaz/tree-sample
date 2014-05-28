@@ -1,0 +1,14 @@
+<div ng-controller="recursiveController">
+    <div class="center-block text-center">
+        Recursive tree
+    </div>
+    <tree ng-if="data" child="data">
+
+    </tree>
+    <div class="center-block text-center">
+        <button ng-click="saveState(data)">Save</button>
+        <button ng-click="restoreState()">Restore</button>
+    </div>
+</div>
+
+

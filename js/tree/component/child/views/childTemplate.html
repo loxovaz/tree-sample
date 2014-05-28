@@ -1,0 +1,25 @@
+<div class='panel panel-default'>
+    <div class='panel-heading'>
+        <h4 class='panel-title'>
+            <a data-toggle='collapse' data-target='#children{{$id}}'>
+                <span ng-show='child.children && child.children.length>0'
+                      class='expand-icon glyphicon glyphicon-minus-sign'></span>
+                <span ng-show='!child.children || child.children.length==0'
+                      class='expand-icon glyphicon glyphicon-leaf'></span>
+                <span ng-hide="child.editMode">{{child.name}}</span>
+                <input ng-show="child.editMode" type="text" ng-model="child.name">
+            </a>
+            <span class='pull-right'>
+                                <span class='delete glyphicon glyphicon-minus'></span>
+                                <span class='add glyphicon glyphicon-plus' ></span>
+                                <span class='edit glyphicon glyphicon-pencil' ng-hide="child.editMode"></span>
+                                <span class='save glyphicon glyphicon-floppy-disk' ng-show="child.editMode"></span>
+                                 </span>
+        </h4>
+    </div>
+    <div id='children{{$id}}' class='panel-collapse collapse in' ng-show='child.children && child.children.length>0'>
+        <div class='panel-body'>
+            <ul></ul>
+        </div>
+    </div>
+</div>
